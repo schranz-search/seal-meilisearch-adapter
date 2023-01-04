@@ -104,7 +104,7 @@ final class MeilisearchConnection implements ConnectionInterface
      * @param Index[] $indexes
      * @param iterable<array<string, mixed>> $hits
      *
-     * @return array<string, mixed>
+     * @return \Generator<array<string, mixed>>
      */
     private function hitsToDocuments(array $indexes, iterable $hits): \Generator
     {
